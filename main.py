@@ -11,3 +11,16 @@ for i in range(len(numbers1)):
 # ******************************
 # Make your Code
 # ******************************
+evenlist = []
+number = []
+copy = numbers1
+for j in range(len(copy)):
+    x = numbers1.pop()
+    if j % 2 == 0:
+        number.append(x)
+    else: 
+        evenlist.append(x)
+number.reverse()
+evenlist.reverse()
+print("The list numbers \n", number)
+print("The list for even index elements \n", evenlist)
